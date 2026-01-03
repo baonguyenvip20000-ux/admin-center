@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin Support | Gia Bảo</title>
+
+<style>
+*{
+  box-sizing:border-box;
+  font-family:system-ui,-apple-system,BlinkMacSystemFont;
+}
+
+body{
+  margin:0;
+  min-height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+  color:#fff;
+}
+
+.container{
+  text-align:center;
+}
+
+h1{
+  margin-bottom:8px;
+  font-size:26px;
+}
+
+p{
+  opacity:.8;
+  margin-bottom:32px;
+}
+
+/* ADMIN */
+.admin-center{
+  display:flex;
+  justify-content:center;
+  gap:40px;
+  flex-wrap:wrap;
+}
+
+.admin-card{
+  width:160px;
+  text-decoration:none;
+  color:#fff;
+}
+
+.avatar-wrap{
+  width:130px;
+  height:130px;
+  margin:auto;
+  border-radius:50%;
+  padding:4px;
+  background:linear-gradient(135deg,#ff3b3b,#ff9800);
+  transition:.3s;
+}
+
+.avatar-wrap img{
+  width:100%;
+  height:100%;
+  border-radius:50%;
+  object-fit:cover;
+}
+
+.admin-name{
+  margin-top:12px;
+  font-weight:600;
+}
+
+.admin-card:hover .avatar-wrap{
+  transform:scale(1.1);
+  box-shadow:0 0 22px rgba(255,120,0,.7);
+}
+
+.badge{
+  margin-top:6px;
+  display:inline-block;
+  padding:4px 10px;
+  font-size:12px;
+  border-radius:999px;
+  background:rgba(255,255,255,.15);
+}
+</style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>🎫 Trung tâm hỗ trợ</h1>
+    <p>Chọn admin để liên hệ / xử lý ticket</p>
+
+    <div class="admin-center">
+
+      <!-- Gia Bảo -->
+      <a class="admin-card"
+         href="https://www.facebook.com/BaoNguyenADVN"
+         target="_blank">
+        <div class="avatar-wrap">
+          <img src="https://sf-static.upanhlaylink.com/img/image_20260103efd43099a11cc524d117d98a844860aa.jpg">
+        </div>
+        <div class="admin-name">Gia Bảo Nguyễn</div>
+        <div class="badge">Admin website</div>
+      </a>
+
+      <!-- Thle Tân -->
+      <a class="admin-card"
+         href="https://www.facebook.com/thle.tan"
+         target="_blank">
+        <div class="avatar-wrap">
+          <img src="https://sf-static.upanhlaylink.com/img/image_202601031400ea19a21f5f627c01e49439facd35.jpg">
+        </div>
+        <div class="admin-name">Thle Tân</div>
+        <div class="badge">Hỗ trợ dịch vụ</div>
+      </a>
+
+    </div>
+  </div>
+</body>
+</html>
